@@ -1,16 +1,16 @@
-# PGN Mentor downloader
+# PGN Helper
 
 
 ## About
-PGN Mentor downloader is a collection of python scripts to easily download and process pgn files hosted on  <a href="https://www.pgnmentor.com/files.html">PGN Mentor</a>.
+PGN Helper is a collection of python scripts to easily download and process pgn files.
 
 ### Fetch files
-With the <a href="fetch_files.py">fetch_files.py</a> script you can easily bulk-download all the pgn files from one of the three  categories in which the website organizes them: by player, by opening, or by event.
+With the <a href="fetch_files_from_pgnmentor.py">fetch_files_from_pgnmentor.py</a> script you can easily bulk-download all the pgn files from one of the three  categories in which the website pgnmentor.com organizes them: by player, by opening, or by event.
 
 ### Create opening book
-Once downloaded, you can process the pgn files as you want; for example, the <a href="create_opening_book.py">create_opening_book.py</a> script creates a json file which represents the tree of all the first  <em>n</em> moves played in every match of each pgn file by players which elo is greater than <em>x</em>, where <em>n</em> and <em>x</em> are parameters of the script.
+Given a folder (pgn/) of pgn files, the <a href="create_opening_book.py">create_opening_book.py</a> script creates a json file which represents the tree of all the first  <em>n</em> moves played in every match of each pgn file by players which elo is greater than <em>x</em>, where <em>n</em> and <em>x</em> are parameters of the script.
 
-For instance, here is how a json opening book generated with 2500+ players and 2 moves by the script looks like (# is the popularity of the move, that is the number of times the move has been played):
+For instance, here is how a json opening book generated with 2500+ players and 2 moves by the script looks like (# is the number of times the move has been played):
 ```
 {
   "e4": {
