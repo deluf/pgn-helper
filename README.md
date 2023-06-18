@@ -39,7 +39,7 @@ For instance, here is how a json opening book generated with 2500+ players and 2
 Remember that you can, and should, minify the json file to save some space!
 
 
-I also made a few opening books, each one with 2500+ players but different number of moves, so that you can directly download them.
+I also made a few <a href="opening_books/" >opening books</a>, each one with 2500+ players but different number of moves, so that you can directly download them.
 
 ## Setup
 The only dependency is beautifulsoup4: ```pip install beautifulsoup4```
